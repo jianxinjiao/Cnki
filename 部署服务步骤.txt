@@ -1,0 +1,80 @@
+﻿1、安装必要库：
+	yum install zlib zlib-devel readline-devel sqlite-devel bzip2-devel openssl-devel gdbm-devel libdbi-devel ncurses-libs kernel-devel libxslt-devel libffi-devel python-devel zlib-devel openldap-devel sshpass gcc git -y
+	yum install http://www.percona.com/downloads/percona-release/redhat/0.1-6/percona-release-0.1-6.noarch.rpm -y
+	yum install Percona-Server-server-56 install Percona-Server-devel-56 -y
+2、进入项目所在文件夹，将项目拷贝到服务器：
+	scp -P 22 -r HtmlHdlApi root@10.120.67.164:/etc/ServingModel
+                再输入服务器密码
+3、看是否有python3.6.5环境，下载python3.6.5安装包
+	wget https://www.python.org/ftp/python/3.6.5/Python-3.6.5.tgz
+	如果没有wget 则安装：yum -y install wget
+	解压Python-3.6.5.tgz：tar vxf Python-3.6.5.tgz
+	cd Python-3.6.5
+	把python-3.6.5下Modules 下Setup.dist 大概51%处的205行左右，_socket socketmodule.c  和SSL=/usr/local/ssl  及下面三行注释去掉
+	进入到python-3.6.5目录下
+	./configure --prefix=/usr/local/Python3  如果报错执行：yum -y groupinstall "Development Tools" 再从新运行
+	make all
+	make install  如果报错执行：yum -y install zlib*
+	make clean
+	make distclean 
+	ln -s /usr/local/python3/bin/python3 /usr/bin/python3
+	ln -s /usr/local/python3/bin/pip3 /usr/bin/pip3
+4、安装python包：
+	升级pip:
+	pip3 install --upgrade pip -i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com
+	pip3 install virtualenvwrapper -i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com
+                配置：
+	编辑~/.bashrc，最后加入以下语句，后面路径根据自己安装的Python路径进行修改
+	export WORKON_HOME=$HOME/.virtualenvs
+	export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+	export VIRTUALENVWRAPPER_VIRTUALENV=/cnki/install/Python3/bin/virtualenv
+	source /cnki/install/Python3/bin/virtualenvwrapper.sh
+	重新加载配置，source ~/.bashrc	
+5、创建虚拟环境：
+	virtualenv -p python3 htmlHdlApi
+	激活虚拟环境：
+		source ./htmlHdlApi/bin/activate
+6、开启端口：
+	开启防火墙：systemctl start firewalld
+	开放指定端口：firewall-cmd --zone=public --add-port=9595/tcp --permanent
+	重启防火墙：firewall-cmd --reload
+	查看端口号：
+		netstat -ntlp   //查看当前所有tcp端口·
+		netstat -ntulp |grep 9595   //查看所有9595端口使用情况·
+7、启动项目：
+	计入项目目录下运行 python manage.py runserver 0.0.0.0:9595
+	浏览器上输入IP及端口号，看项目是否运行成功
+8、安装gunicorn：
+	pip install gunicorn
+
+9、安装Nginx：
+	https://www.cnblogs.com/hdnav/p/7941165.html
+10、启动服务
+	gunicorn tutorial.wsgi:application --bind 0.0.0.0:9595 --daemon
+
+11、关闭服务
+	pstree -ap | grep gunicorn  如果没有pstree,下载： yum install psmisc
+12、杀死进程
+	kill -9 进程号
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

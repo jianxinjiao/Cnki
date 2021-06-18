@@ -1,0 +1,115 @@
+学习：
+Python数据结构-树
+	https://www.cnblogs.com/bjwu/p/9016566.html
+Windows 10 专业版激活方式
+	https://blog.51cto.com/13043516/2299782
+pip换源：
+	https://blog.csdn.net/yuzaipiaofei/article/details/80891108
+机器学习算法，代码
+	https://github.com/SmallVagetable/machine_learning_python
+虚拟环境
+	https://www.cnblogs.com/DesignerA/p/11609797.html
+遍历文件夹中所有文件路径
+	https://www.cnblogs.com/taoyuanming/p/10824523.html
+bert案例：
+	https://blog.csdn.net/macanv/article/details/85684284
+	https://cloud.tencent.com/developer/article/1454904
+	多篇：http://www.52nlp.cn/tag/bert%E5%AE%9E%E6%88%98
+	多篇：https://www.cnblogs.com/lookfor404/
+bilstm+crf案例：
+	https://www.zybuluo.com/lianjizhe/note/1205311
+	https://blog.csdn.net/u010626937/article/details/78414292
+	https://www.cnblogs.com/lookfor404/p/9189429.html
+	https://www.cnblogs.com/Determined22/p/7238342.html
+	https://www.jianshu.com/p/9b3b2696ed63
+word2vec向量生成：
+	https://www.cnblogs.com/jfdwd/p/11089155.html
+Lstm_crf情感分析：
+	https://github.com/renjunxiang/Text-Classification/blob/master/TextClassification/data/data_single.csv
+conda虚拟环境操作 - 简书
+	https://www.jianshu.com/p/033ab2497c2f
+conda 在断网情况下创建虚拟环境_网络_冯子材的博客-CSDN博客
+	https://blog.csdn.net/taifengzikai/article/details/97374495
+中文公开聊天语料库_https
+	https://www.sohu.com/a/300371630_120054440
+Pycharm2018.3.5永久破解 - boy° - 博客园
+	https://www.cnblogs.com/Golanguage/p/12272062.html
+spark分布式计算教程第一章-快速运行你的第一个spark程序
+	https://blog.csdn.net/youbitch1/article/details/88355111
+数组、链表、堆栈、队列、二叉树
+	https://blog.csdn.net/u013429010/article/details/81838203
+Tensorflow 自动文摘: 基于Seq2Seq+Attention模型的Textsum模型
+	https://blog.csdn.net/Real_Myth/article/details/69569169?utm_medium=distribute.pc_aggpage_search_result.none-task-blog-2~all~baidu_landing_v2~default-1-69569169.nonecase&utm_term=深度学习 生成文摘&spm=1000.2123.3001.4430
+NLP面试题（重点）
+	https://blog.csdn.net/qq_17677907/article/list/4
+视频课程-Seq2Seq序列生模型 文章摘要生成
+	https://www.bilibili.com/video/av62731964?p=2
+视频课程-SVM 算法推导
+	https://www.bilibili.com/video/BV1v541147uk
+视频课程-python+Spark--->厦门大学_林子雨
+	https://www.bilibili.com/video/BV1s441197ZB?p=58
+21个项目玩转深度学习
+	https://github.com/hzy46/Deep-Learning-21-Examples
+	https://github.com/j-min/tf_tutorial_plus/tree/master/RNN_seq2seq/contrib_seq2seq
+最大似然估计算法
+	https://github.com/j-min/tf_tutorial_plus/tree/master/RNN_seq2seq/contrib_seq2seq
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
